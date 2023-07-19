@@ -55,6 +55,12 @@ Before running the app, make sure to configure the following:
 6. The app will send the check-in data to the configured backend server for storage.
 7. Repeat the check-in process as needed for subsequent user check-ins.
 
+## Additional Functionality
+
+The following features have been added to the app:
+
+- **Checkout**: After the check-in is recorded, the "Check-In" button will change to "Checkout" after a 3-second loading period. Clicking the "Checkout" button will update the check-in data and mark the user as checked out.
+
 ## Dependencies
 
 The Helen House Mobile Check-In App relies on the following dependencies:
