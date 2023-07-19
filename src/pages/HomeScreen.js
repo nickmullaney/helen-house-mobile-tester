@@ -1,17 +1,23 @@
 import React from 'react';
+import { Image } from 'react-native';
 import { View, Text, StyleSheet, Button } from 'react-native';
+import logo from '../../assets/logo.png';
+import { useNavigation } from '@react-navigation/native';
 
-const HomeScreen = ({ navigation }) => {
-  const handleCheckIn = () => {
+const HomeScreen = () => {
+  const navigation = useNavigation();
+  const handleLogin = () => {
     // Perform check-in logic here
-    console.log('Check-in button pressed');
+    console.log('login button pressed');
+    navigation.navigate('CheckInScreen');
   };
 
   return (
     <View style={styles.container}>
+      <Image source={logo} />
       <Text style={styles.title}>Welcome to the Home Screen</Text>
       <Text style={styles.text}>You can check in here and let us know how you are feeling.</Text>
-      <Button title="Check-in" onPress={handleCheckIn} />
+      <Button title="Log in" onPress={handleLogin} />
     </View>
   );
 };
