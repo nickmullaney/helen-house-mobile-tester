@@ -1,10 +1,12 @@
 import React from 'react';
 import { View, Image, TouchableOpacity, StyleSheet } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
+import { DrawerActions, useNavigation } from '@react-navigation/native';
 import { Ionicons } from '@expo/vector-icons';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 
 const Header = () => {
   const navigation = useNavigation();
+  const Drawer = createDrawerNavigator();
 
   const handleMenuPress = () => {
     navigation.dispatch(DrawerActions.openDrawer());
@@ -20,7 +22,7 @@ const Header = () => {
   };
 
   const handleContactUsPress = () => {
-    navigation.navigate('ContactUs'); // Navigate to the Contact Us screen
+    navigation.navigate('ContactUsScreen'); // Navigate to the Contact Us screen
   };
 
   return (
@@ -28,18 +30,9 @@ const Header = () => {
       <TouchableOpacity onPress={handleMenuPress} style={styles.menuButton}>
         <Ionicons name="menu" size={24} color="#333" />
       </TouchableOpacity>
+
       <Image source={require('../../../assets/logo.png')} style={styles.logo} />
-      <View style={styles.options}>
-        <TouchableOpacity onPress={handleHomePress} style={styles.optionButton}>
-          <Ionicons name="home" size={24} color="#333" />
-        </TouchableOpacity>
-        <TouchableOpacity onPress={handleSettingsPress} style={styles.optionButton}>
-          <Ionicons name="settings" size={24} color="#333" />
-        </TouchableOpacity>
-        <TouchableOpacity onPress={handleContactUsPress} style={styles.optionButton}>
-          <Ionicons name="mail" size={24} color="#333" />
-        </TouchableOpacity>
-      </View>
+     
     </View>
   );
 };
@@ -50,10 +43,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingHorizontal: 16,
-    height: 60,
+    height: 70,
     backgroundColor: '#a37ccf',
     borderBottomWidth: 2,
     borderBottomColor: '#6628ad',
+    paddingTop: 25,
   },
   menuButton: {
     padding: 8,

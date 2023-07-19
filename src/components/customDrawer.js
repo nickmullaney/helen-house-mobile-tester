@@ -19,11 +19,17 @@ const CustomDrawer = () => {
 
   const handleContactUsPress = () => {
     navigation.dispatch(DrawerActions.closeDrawer());
-    navigation.navigate('ContactUs');
+    navigation.navigate('ContactUsScreen');
+  };
+
+  const handleCheckinPress = () => {
+    navigation.dispatch(DrawerActions.closeDrawer());
+    navigation.navigate('CheckInScreen');
   };
 
   return (
     <View style={styles.drawerContainer}>
+
       <TouchableOpacity onPress={handleHomePress} style={styles.drawerOption}>
         <Text style={styles.drawerOptionText}>Home</Text>
       </TouchableOpacity>
@@ -32,6 +38,9 @@ const CustomDrawer = () => {
       </TouchableOpacity>
       <TouchableOpacity onPress={handleContactUsPress} style={styles.drawerOption}>
         <Text style={styles.drawerOptionText}>Contact Us</Text>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={handleCheckinPress} style={styles.drawerOption}>
+        <Text style={styles.drawerOptionText}>Check In</Text>
       </TouchableOpacity>
     </View>
   );
