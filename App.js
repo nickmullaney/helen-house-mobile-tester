@@ -29,7 +29,9 @@ export default function App() {
         <Drawer.Navigator drawerContent={CustomDrawer} screenOptions={{ headerShown: false }} initialRouteName="Home" 
           options={{
             drawerIcon: null,
-          }}>
+          }}
+          style={styles.drawerContainer}
+          >
           <Drawer.Screen name="Home" component={HomeScreen} />
           <Drawer.Screen name="Settings" component={SettingsScreen} />
           <Drawer.Screen name="ContactUsScreen" component={ContactUsScreen} />
@@ -57,5 +59,10 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     marginBottom: 20,
+  },
+  drawerContainer: {
+    flex: 1,
+    backgroundColor: '#a37ccf',
+    paddingTop: 40,
   },
 });

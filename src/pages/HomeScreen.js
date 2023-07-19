@@ -15,8 +15,8 @@ const HomeScreen = () => {
   return (
     <View style={styles.container}>
       <Image source={logo} />
-      <Text style={styles.title}>Welcome to the Home Screen</Text>
-      <Text style={styles.text}>You can check in here and let us know how you are feeling.</Text>
+      <Text style={styles.title}>Welcome to the Helen House</Text>
+      <Text style={styles.text}>You can log in here and check in for the day</Text>
       <Button title="Log in" onPress={handleLogin} />
     </View>
   );

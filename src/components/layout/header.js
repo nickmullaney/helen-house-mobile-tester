@@ -43,11 +43,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingHorizontal: 16,
-    height: 70,
+    height: 75,
     backgroundColor: '#a37ccf',
     borderBottomWidth: 2,
     borderBottomColor: '#6628ad',
-    paddingTop: 25,
+    paddingTop: 30,
   },
   menuButton: {
     padding: 8,

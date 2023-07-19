@@ -49,7 +49,7 @@ const CustomDrawer = () => {
 const styles = StyleSheet.create({
   drawerContainer: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#a37ccf',
     paddingTop: 40,
   },
   drawerOption: {
