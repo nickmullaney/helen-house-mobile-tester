@@ -14,11 +14,11 @@ const MoodSlider = ({ rating, onRatingChange }) => {
   };
 
   const genzMoodEmojis = {
-    1: '🙃', 
-    2: '💀',
-    3: '😅',
-    4: '😭',
-    5: '🔥',
+    1: '🤬',
+    2: '😎',
+    3: '😐',
+    4: '🫠',
+    5: '🥳',
   };
 
   const [isTraditional, setIsTraditional] = useState(true);

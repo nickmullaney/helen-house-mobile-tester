@@ -32,7 +32,7 @@ The Helen House Mobile Check-In App is designed to provide a mobile check-in sol
 4. Start the Expo development server:
 
    ```shell
-   npm start
+   npm start or npx expo start --tunnel
    ```
 
    This will open the Expo developer tools in your browser.
@@ -76,6 +76,29 @@ The Helen House Mobile Check-In App relies on the following dependencies:
 - `auth0-js`: Auth0 JavaScript library for authentication and authorization.
 
 Please refer to the documentation for each dependency for more information on their usage and configuration.
+
+## Gallery
+
+#### Home Screen!
+[Home Screen](assets/mobilehome.jpg)
+
+#### Checkin Screen
+![Mobile Checkin](assets/mobilecheckin.jpg)
+
+#### Checkin Loading Screen
+![Mobile Checkin Loading](assets/mobilecheckinloading.jpg)
+
+#### Checkout Screen
+![Mobile Checkin](assets/mobilecheckout.jpg)
+
+#### Burger Menu Screen
+![Mobile Checkin](assets/mobilemenu.jpg)
+
+#### Settings Screen
+![Mobile Checkin](assets/mobilesettings.jpg)
+
+#### Contact Us Screen
+![Mobile Checkin](assets/mobilecontact.jpg)
 
 ## Contributing
 
